@@ -1,0 +1,30 @@
+# Python / editor
+__pycache__/
+*.pyc
+*.pyo
+*.DS_Store
+.env
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Airflow
+airflow/logs/
+airflow/*.pid
+
+# dbt artifacts
+**/target/
+**/logs/
+manifest.json
+run_results.json
+parsing.log
+
+# DuckDB / data artefacts
+*.duckdb
+*.duckdb.wal
+/data/silver/
+/data/gold/
+
+# Misc
+*.sqlite
