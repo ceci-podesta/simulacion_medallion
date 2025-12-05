@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: orders_by_status
+    description: Daily count of orders grouped by normalized status.
+    columns:
+      - name: order_date
+        description: Date of the orders.
+        tests:
+          - not_null
+      - name: status
+        description: Lifecycle status for the grouped orders.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+      - name: total_orders
+        description: Number of orders for the given date and status.
+        tests:
+          - not_null
