@@ -1,0 +1,57 @@
+{
+  "run_date": "2018-10-30",
+  "csv_path": "/home/cecilia/simulacion_medallion/data/silver/2018-10-30/orders_clean_2018-10-30.csv",
+  "passed": true,
+  "tests": [
+    {
+      "name": "accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned",
+      "status": "pass",
+      "execution_time": 0.4148240089416504
+    },
+    {
+      "name": "not_null_orders_by_status_order_date",
+      "status": "pass",
+      "execution_time": 0.49047255516052246
+    },
+    {
+      "name": "not_null_orders_by_status_status",
+      "status": "pass",
+      "execution_time": 0.4888901710510254
+    },
+    {
+      "name": "accepted_values_orders_by_status_status__placed__shipped__completed__return_pending__returned",
+      "status": "pass",
+      "execution_time": 0.5011553764343262
+    },
+    {
+      "name": "not_null_orders_by_status_total_orders",
+      "status": "pass",
+      "execution_time": 0.1299588680267334
+    },
+    {
+      "name": "not_null_stg_orders_customer_id",
+      "status": "pass",
+      "execution_time": 0.10023617744445801
+    },
+    {
+      "name": "not_null_stg_orders_order_date",
+      "status": "pass",
+      "execution_time": 0.10546517372131348
+    },
+    {
+      "name": "not_null_stg_orders_order_id",
+      "status": "pass",
+      "execution_time": 0.10497832298278809
+    },
+    {
+      "name": "not_null_stg_orders_status",
+      "status": "pass",
+      "execution_time": 0.07969498634338379
+    },
+    {
+      "name": "unique_stg_orders_order_id",
+      "status": "pass",
+      "execution_time": 0.05953788757324219
+    }
+  ]
+}

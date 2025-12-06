@@ -35,7 +35,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_medallion:
     +materialized: table
-    staging:
-      +schema: staging
-    marts:
-      +schema: marts
+    bronze:
+      +schema: bronze
+    silver:
+      +schema: silver
+    gold:
+      +schema: gold
